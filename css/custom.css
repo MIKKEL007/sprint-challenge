@@ -12,12 +12,19 @@ body {
 }
 
 .text-gray{
-    color: #495057;
+    color: #343A40;
 }
 
 .text-blue {
     color: #052051;
   }
+
+  .btn-des{
+    background-color: #f3f5fc;
+    color: #052051;
+    border: 1px solid #052051;
+
+}
 
 /*Teléfono móvil */
 @media only screen and (max-width: 600px) {
@@ -36,11 +43,10 @@ body {
          display: flex;
          flex-direction: column;
     }
-  
-    .container-right {
-      
+    .container-right{
+        padding: 2rem;
     }
-  
+   
     .logo {
       display: inline-block;
       margin: 1rem;
@@ -56,7 +62,7 @@ body {
     .container-data {
       height: 100%;
       background-color: #ffffff;
-      box-shadow: 0px 0px 5px 3px #e7e8ee;
+      box-shadow: 0px 2px 5px 2px #bcbdbf;
       padding: 1rem;
       border-radius: 1rem;
     }
@@ -68,6 +74,8 @@ body {
   
     .mensajes {
       margin-top: 1.3rem;
+
+      /* margin: 2rem; */
       text-align: center;
     }
   
@@ -78,8 +86,10 @@ body {
   
     .container-copiar {
       margin-top: 2rem;
-      display: flex;
+      display: none ;
       justify-content: center;
+
+
     }
   
     button {
@@ -87,13 +97,21 @@ body {
   
       text-transform: uppercase;
       font-size: 16px;
-      margin: 1rem;
-      width: 90%;
+      margin: 0.5rem auto;
+      width: auto;
   
       border: none;
       border-radius: 7px;
       background-color: #052051;
       color: #f3f5fc;
+    }
+
+
+    .btn-des{
+        background-color: #f3f5fc;
+        color: #052051;
+        border: 1px solid #052051;
+
     }
   
     .texto {
@@ -119,9 +137,8 @@ body {
     }
   
     .main {
-        flex: 90%;
+        flex: 95%;
       display: flex;
-
       flex-direction: column;
     }
   
@@ -134,8 +151,7 @@ body {
 
     }
 
-    .content-button {
-    }
+  
   
     .form-input {
        width: 90%;
@@ -165,12 +181,138 @@ body {
 @media only screen and (min-width: 601px) and (max-width: 1023px) {
 
 
+
+    .container-left {
+        flex: 70%;
+
+        background-color: red;
+      }
+    
+      .container-right {
+        flex: 30%;
+        padding: 2rem;
+      }
+    
+      .logo {
+        display: inline-block;
+        margin: 1rem;
+        height: 10vh;
+      }
+    
+      .logo img {
+        width: 100%;
+        min-width: 70px;
+        height: auto;
+      }
+    
+      .container-data {
+        height: 100%;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 5px 3px #e7e8ee;
+        padding: 1rem;
+        border-radius: 1rem;
+      }
+    
+      .text-blue {
+        color: #052051;
+      }
+    
+      .container-data img {
+        width: 100%;
+        min-width: 100px;
+        height: 100%;
+      }
+    
+      .mensajes {
+        margin-top: 1.3rem;
+        text-align: center;
+      }
+    
+      .mensajes p {
+        margin-top: 1rem;
+        padding: 0 2rem;
+      }
+    
+      .container-copiar {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+      }
+    
+      button {
+        padding: 1rem 2rem;
+    
+        text-transform: uppercase;
+        font-size: 16px;
+        margin: 1rem;
+        width: 90%;
+    
+        border: none;
+        border-radius: 7px;
+        background-color: #052051;
+        color: #f3f5fc;
+      }
+    
+      .texto {
+        font-size: 32px;
+        overflow: scroll;
+        height: 60%;
+      }
+    
+      .imagen {
+        height: 60%;
+      }
+    
+      .titulo {
+        font-size: 24px;
+        font-weight: bolder;
+      }
+      .subtitulo {
+        font-size: 18px;
+      }
+    
+      .parrafo {
+        font-size: 16px;
+      }
+    
+      .main {
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+      }
+    
+      .content-input {
+        flex: 70%;
+        padding: 2rem;
+      }
+    
+      .form-input {
+        width: 100%;
+        border: none;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        font-size: x-large;
+        box-shadow: 0px 0px 5px 3px #e7e8ee;
+      }
+    
+      .form-input:focus,
+      .form-input:active {
+        outline: none;
+      }
+    
+      .botones {
+        display: flex;
+      }
+    
+      .info {
+        padding-left: 1rem;
+      }
+
 }
 
 /* Computadora */
 @media only screen and (min-width: 1024px) {
-  .main-container {
-  }
+
 
   .container-left {
     flex: 70%;
