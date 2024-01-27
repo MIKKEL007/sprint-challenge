@@ -11,8 +11,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
-<!-- FONT AWESOME -->
-<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
     <link rel="stylesheet" href="css/custom.css">
 
@@ -27,18 +25,18 @@
 
             <div class="content-input">
 
-                <input type="text" name="" id="" class="form-input text-blue" placeholder="Ingrese el texto aqui!!">
+                <input type="text" name="" id="txt-datos" class="form-input text-blue" placeholder="Ingrese el texto aqui!!">
             </div>
 
             <div class="content-button">
 
                 <div class="info text-gray">
-                    <span> <img src="img/circle-exclamation-solid.svg" alt="" width="14"> Solo letras minúsculas y sin acento</span>
+                    <span id="txt-info"> <img src="img/circle-exclamation-solid.svg" alt="" width="14"> Solo letras minúsculas y sin acento</span>
 
                 </div>
                 <div class="botones">
-                    <button> Encriptar</button>
-                    <button class="btn-des"> Desencriptar</button>
+                    <button id="btn-encrip"> Encriptar</button>
+                    <button class="btn-des" id="btn-descript"> Desencriptar</button>
                 </div>
             </div>
 
@@ -49,70 +47,25 @@
     <div class="main-container container-right">
 
         <div class="container-data">
-            <div class="imagen">
+            <div class="imagen" id="txt-imagen">
                 <img src="img/Muñeco.png" alt="imagen de un muñeco">
             </div>
 
-            <!-- <div class="texto text-blue">
+            <div class="texto text-blue" id="txt-encriptado">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae libero similique cupiditate consectetur reiciendis nemo aliquid iure, mollitia ipsum labore! Consequuntur magni numquam eligendi, aspernatur et quasi libero eveniet in!
-            </div> -->
+            </div>
 
             <div class="mensajes text-gray">
                 <h1 class="titulo">Ningun mensaje fue encontrado</h1>
                 <p class="subtitulo">Ingrese el texto que desees para encriptar o desencriptar</p>
             </div>
             <div class="container-copiar">
-                <button> Copiar</button>
+                <button id="btn-copiar"> Copiar</button>
             </div>
         </div>
 
 
     </div>
-    <!-- <div class="container container-1">
-        <header>
-            <img src="img/Logo.png" alt="logo de alura">
-        </header>
-
-        <main>
-            <section id="content-principal">
-                <div id="texto">
-                    <input type="text" placeholder="Introduce el texto aqui">
-                </div>
-            </section>
-
-            <section id="btn-acciones">
-                <div id="condiciones">
-                    <span>Solo letras minúsculas y sin acento</span>
-                </div>
-
-                <div id="botones">
-                    <button>Encriptar</button>
-                    <button>Desencriptar</button>
-                </div>
-            </section>
-        </main>
-    </div>
-
-    <div class="container container-2">
-        <aside>
-            <section id="panel">
-                <div id="content-cifrado">
-                    <div id="imagen">
-                        <img src="img/Muñeco.png" alt="imagen de un muñeco">
-                    </div>
-                    <div id="cifrado">
-               16px;    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non dolores nisi eaque eveniet repellat ad sed maiores voluptatibus cupiditate fuga, magni rem quas cum perferendis, earum quia explicabo in excepturi.
-                    </div>
-                </div>
-
-                <div id="mensajes"></div>
-                <div id="botones">
-                    <button>Copiar</button>
-                </div>
-            </section>
-        </aside>
-    </div> -->
-
     <script src="js/main.js"></script>
 </body>
 </html>
